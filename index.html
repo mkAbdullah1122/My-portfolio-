@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Malik Abdullah's professional portfolio website." />
+  <title>Malik Abdullah | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="header">
+    <nav class="nav container">
+      <a class="logo" href="#home">malik<span>abdullah</span></a>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero container">
+      <div class="hero-content reveal">
+        <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+        <h1>Hi, I'm <span>Malik Abdullah</span></h1>
+        <h2>Student &amp; Future Tech Professional</h2>
+        <p class="hero-text">
+          I’m passionate about technology, learning new skills, and building
+          meaningful digital experiences.
+        </p>
+        <div class="hero-buttons">
+          <a class="btn primary" href="#projects">View My Work</a>
+          <a class="btn secondary" href="#contact">Contact Me</a>
+        </div>
+        <div class="social-links" aria-label="Social links">
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="GitHub">⌘</a>
+          <a href="mailto:your.email@example.com" aria-label="Email">@</a>
+        </div>
+      </div>
+      <div class="hero-card reveal">
+        <div class="avatar">MA</div>
+        <p class="card-label">PERSONAL BRAND</p>
+        <h3>Creating. Learning. Growing.</h3>
+        <p>Focused on continuous improvement and real-world projects.</p>
+      </div>
+    </section>
+
+    <section id="about" class="section container reveal">
+      <p class="eyebrow">ABOUT ME</p>
+      <h2 class="section-title">A little about <span>me</span></h2>
+      <div class="about-grid">
+        <div>
+          <p>
+            Hello! I’m Malik Abdullah. I’m a motivated student interested in
+            technology and digital innovation. I enjoy exploring new ideas,
+            improving my skills, and working on practical projects.
+          </p>
+          <p>
+            This portfolio is a place to share my journey, achievements,
+            projects, and future goals.
+          </p>
+        </div>
+        <div class="info-box">
+          <p><strong>Name:</strong> Malik Abdullah</p>
+          <p><strong>Role:</strong> Student</p>
+          <p><strong>Location:</strong> Pakistan</p>
+          <p><strong>Email:</strong> your.email@example.com</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section alt-section">
+      <div class="container reveal">
+        <p class="eyebrow">MY SKILLS</p>
+        <h2 class="section-title">What I’m <span>learning</span></h2>
+        <div class="skills-grid">
+          <div class="skill-card"><span>01</span><h3>Web Development</h3><p>HTML, CSS and JavaScript fundamentals.</p></div>
+          <div class="skill-card"><span>02</span><h3>Problem Solving</h3><p>Logical thinking and practical solutions.</p></div>
+          <div class="skill-card"><span>03</span><h3>Communication</h3><p>Professional communication and teamwork.</p></div>
+          <div class="skill-card"><span>04</span><h3>Continuous Learning</h3><p>Exploring tools, technologies and new ideas.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section container reveal">
+      <p class="eyebrow">MY WORK</p>
+      <h2 class="section-title">Featured <span>projects</span></h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-number">01</div>
+          <h3>Personal Portfolio</h3>
+          <p>A responsive personal portfolio website built with HTML and CSS.</p>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>Responsive</span></div>
+        </article>
+        <article class="project-card">
+          <div class="project-number">02</div>
+          <h3>Project Two</h3>
+          <p>Replace this text with a description of your next project.</p>
+          <div class="tags"><span>Coming Soon</span></div>
+        </article>
+        <article class="project-card">
+          <div class="project-number">03</div>
+          <h3>Project Three</h3>
+          <p>Showcase your future work, achievements, or experiments here.</p>
+          <div class="tags"><span>Coming Soon</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt-section">
+      <div class="container reveal">
+        <p class="eyebrow">GET IN TOUCH</p>
+        <h2 class="section-title">Let’s work <span>together</span></h2>
+        <p class="contact-text">
+          Have a question, opportunity, or project idea? Send me a message.
+        </p>
+        <form id="contact-form" class="contact-form">
+          <input type="text" name="name" placeholder="Your name" required />
+          <input type="email" name="email" placeholder="Your email" required />
+          <textarea name="message" rows="5" placeholder="Your message" required></textarea>
+          <button class="btn primary" type="submit">Prepare Email</button>
+          <p id="form-status" class="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Malik Abdullah. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
